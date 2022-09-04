@@ -47,9 +47,9 @@ register('command', (...args) => {
 
 register('step', () => {
     //print(Client.currentGui.get());
-    print(currentLocation);
-    print(Server.getIP());
-    if(Server.getIP() == "hypixel.net") {
+    //print(currentLocation);
+    //print(Server.getIP());
+    if(Server.getIP() == "hypixel.net" || Server.getIP() == "play.hypixel.net") {
         onServer = true
     } else { 
         onServer = false
@@ -208,5 +208,3 @@ const generateNewKey = () => {
 		print(err);
 	});
 }
-
-generateNewKey();
